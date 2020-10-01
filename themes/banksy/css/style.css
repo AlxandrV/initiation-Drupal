@@ -1,6 +1,6 @@
 :root{
     --header-color         : #C9C9C9;
-    --secondary-font-color : #fff;
+    --secondary-font-color : grey;
     --post-font-color-title: black;
     --post-font-size-title : 1.5rem;
     --font-size-title      : 3.56rem;
@@ -68,6 +68,12 @@ header{
     background-color: var(--header-color);
 }
 
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo{
     margin-left: 120px;
 }
@@ -80,12 +86,12 @@ header{
     margin-left: 120px;
 }
 
-.navbar > ul{
+nav > ul{
     display: flex;
     padding: 0;
 }
 
-.navbar li:not(:first-child){
+nav li:not(:first-child){
     margin-left: 35px;
 }
 
